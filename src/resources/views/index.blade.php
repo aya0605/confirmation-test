@@ -14,7 +14,7 @@
   <header class="header">
     <div class="header__inner">
       <a class="header__logo" href="/">
-        Contact Form
+        FashionablyLate
       </a>
     </div>
   </header>
@@ -40,6 +40,20 @@
               @error('name')
               {{ $message }}
               @enderror
+            </div>
+          </div>
+        </div>
+        <div class="form__group">
+          <div class="form__group-title">
+            <span class="form__label--item">性別</span>
+            <span class="form__label--required">必須</span>
+          </div>
+          <div class="form__group-content">
+            <div class="form__input--text">
+              <input id="male" type="radio" name="sex" value="male"><label for="male">男性</label><input id="female" type="radio" name="sex" value="female"><label for="female">女性</label> placeholder="test@example.com" value="{{ old('email') }}" />
+            </div>
+            <div class="form__error">
+              <!--バリデーション機能を実装したら記述します。-->
             </div>
           </div>
         </div>
